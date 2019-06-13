@@ -1,0 +1,31 @@
+{
+  "name": "qatest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "all": "npm run unit && npm run e2e && npm run ui",
+    "unit": "karma start",
+    "e2e": "node ./e2e/baidu.spec.js",
+    "ui": "backstop test",
+    "service": "node ./mochaRunner.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "backstopjs": "^3.7.0",
+    "express": "^4.16.4",
+    "jasmine-core": "^3.3.0",
+    "karma": "^3.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-jasmine": "^1.1.2",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.1",
+    "phantomjs": "^2.1.7",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
